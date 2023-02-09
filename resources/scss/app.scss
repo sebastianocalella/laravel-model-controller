@@ -1,1 +1,23 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+@import './partials/colors.scss';
+
+main{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(18,18,18,1) 10%, rgba(30,30,30,1) 59%, rgba(39,39,39,1) 100%);
+    color: $font-light;
+    padding: 15px 20px;
+    h1{
+        color: $font-color;
+    }
+    .card{
+        height: 240px;
+    }
+    .btn{
+        color: $font-light;
+        background-color: $font-color;
+
+        &:hover{
+            background-color: $font-color-dark;
+        }
+    }
+}

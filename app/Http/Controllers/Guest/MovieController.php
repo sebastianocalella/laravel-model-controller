@@ -10,7 +10,7 @@ class MovieController extends Controller
 {
     //
     public function index(){
-        $movies = Movie::all();
+        $movies = Movie::where('id','>',0)->limit(8)->get();
         return view('home', compact('movies'));
     }
 }
